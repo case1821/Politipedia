@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politipedia - A-Level Politics Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Politipedia</h1>
+    <p>Learn Pearson Edexcel A-Level Politics (9PL0) using evidence-based techniques!</p>
+  </header>
+
+  <main>
+    <div id="lesson-container">
+      <h2 id="topic-title">Select a topic to start</h2>
+      <select id="topic-select"></select>
+      <button id="start-btn">Start Lesson</button>
+    </div>
+
+    <div id="question-container" style="display:none;">
+      <h3 id="question-text"></h3>
+      <div id="options">
+        <button class="option-btn" data-option="A"></button>
+        <button class="option-btn" data-option="B"></button>
+        <button class="option-btn" data-option="C"></button>
+        <button class="option-btn" data-option="D"></button>
+      </div>
+      <p id="feedback"></p>
+      <button id="next-btn" style="display:none;">Next Question</button>
+    </div>
+
+    <div id="result-container" style="display:none;">
+      <h2>Lesson Complete!</h2>
+      <p id="score"></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
